@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-4iq1&n@x^u!l27km*cv40#o@em-r3ruyq_^mb&e$x^b4dm=8_*
 DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8001', 'http://0.0.0.0:8001']
 
 
 # Application definition
@@ -132,3 +133,5 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = 'api/v1/activities/'
