@@ -66,3 +66,13 @@ Se puede inresar desde la siguiente url primero,
 
 
 ![logindrfvol](https://user-images.githubusercontent.com/54911620/211727074-5e4a9c2b-a641-4393-8531-77cdb5f683a3.png)
+
+### Pendientes
+Se puede utilizar un algoritmo de recomendación para sugerir actividades a los usuarios en función de sus intereses o actividades previas.
+Existen varios algoritmos de recomendación que puedes utilizar para sugerir actividades a los usuarios en función de sus intereses o actividades previas. Algunos de los algoritmos más populares incluyen:
+-   Filtrado colaborativo: Este algoritmo utiliza información de los usuarios y de las actividades para recomendar nuevas actividades que se asemejen a las que un usuario ha realizado o disfrutado previamente.
+-   Sistemas basados en contenido: Este algoritmo recomienda nuevas actividades basadas en una descripción de las actividades existentes, clasificando las actividades en categorías o grupos y utilizando esa información para recomendar actividades similares.
+-   Filtrado híbrido: Este algoritmo combina características de los dos algoritmos anteriores, utilizando tanto información de los usuarios como de las actividades para recomendar nuevas actividades.
+
+Implementar uno de estos algoritmos en la aplicación podría ser un proyecto complejo, ya que necesita tanto datos para entrenar y suficientes usuarios para que el modelo sea efectivo. Sin embargo, existen algunas bibliotecas de terceros que pueden ayudar a implementar estos algoritmos de manera más sencilla, como scikit-learn, LightFM, y Tensorflow.
+En todos los casos, recomiendo saber exactamente qué datos tenemos disponibles para implementar el algoritmo de recomendación y qué necesitamos para entrenar el modelo y hacer las recomendaciones.
