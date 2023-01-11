@@ -8,7 +8,7 @@ class Activity(models.Model):
     type = models.CharField(max_length=255)
     participants = models.IntegerField()
     price = models.FloatField()
-    link = models.URLField()
+    link = models.URLField(blank=True, null=True)
     key = models.CharField(max_length=255)
     accessibility = models.FloatField()
     done = models.BooleanField(default=False)
