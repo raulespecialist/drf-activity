@@ -33,13 +33,13 @@ tabla de base de datos. El endpoint  es el siguiente:
 > http://127.0.0.1:8001/api/v1/activities/
 
 - Las actividades serán diferentes para cada usuario (es necesario considerar que un usuario
-puede tener cero o múltiples actividades). Se realizo haciendo una comprobación para cada nueva actividad del usuario, se verifica que no exista ya para que no tenga repetidas. **api/views.py** *line* **16**.
+puede tener cero o múltiples actividades). Se realizo haciendo una comprobación para cada nueva actividad del usuario, se verifica que no exista ya para que no tenga repetidas. **core/api/views.py** *line* **16**.
 - El usuario podrá usar un endpoint donde se muestren sus actividades generadas. El endpoint es el siguiente: 
 
 > http://127.0.0.1:8001/api/v1/user-activities/
 
 - Las actividades deberán tener un campo llamado 'done' del tipo 'bool' y servirá para que
-el usuario marque las actividades que haya finalizado. **api/models.py** *line* **14**.
+el usuario marque las actividades que haya finalizado. **core/api/models.py** *line* **14**.
 - Las actividades en base de datos se guardarán con el valor 'done' en 'false' y el usuario
 tendrá la posibilidad de usar un endpoint para cambiarlo a 'true'. El endpoint es el siguiente para pasar una actividad con su id a `done=True` : 
 
@@ -76,3 +76,6 @@ Existen varios algoritmos de recomendación que puedes utilizar para sugerir act
 
 Implementar uno de estos algoritmos en la aplicación podría ser un proyecto complejo, ya que necesita tanto datos para entrenar y suficientes usuarios para que el modelo sea efectivo. Sin embargo, existen algunas bibliotecas de terceros que pueden ayudar a implementar estos algoritmos de manera más sencilla, como scikit-learn, LightFM, y Tensorflow.
 En todos los casos, recomiendo saber exactamente qué datos tenemos disponibles para implementar el algoritmo de recomendación y qué necesitamos para entrenar el modelo y hacer las recomendaciones.
+
+### Test
+Cuenta con pruebas unitarias en **core/api/tests.py**
