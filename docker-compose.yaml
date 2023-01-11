@@ -23,7 +23,7 @@ services:
   nginx:
     image: nginx:1.23.1
     ports:
-      - 80001:82
+      - 8001:82
     volumes:
       - ./config/nginx/conf.d:/etc/nginx/conf.d
       - static:/code/core/static

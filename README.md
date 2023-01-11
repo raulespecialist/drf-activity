@@ -58,3 +58,6 @@ Para comenzar a usar la aplicación, se crearon tres usuarios.
 | user1 | TestPass3 |
 | user2 | TestPass3 |
 
+Se puede inresar desde la siguiente url primero, 
+
+> http://127.0.0.1:8001/api-auth/login/
