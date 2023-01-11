@@ -43,9 +43,9 @@ class UserActivityViewSetTest(TestCase):
     def setUp(self):
         self.client = Client()
         self.user = User.objects.create_user(
-            username='user1',
-            email='user1@example.com',
-            password='TestPass3'
+            username='testuser',
+            email='testuser@example.com',
+            password='testpassword'
         )
         self.activity = Activity.objects.create(
             user=self.user,
