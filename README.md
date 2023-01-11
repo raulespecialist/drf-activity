@@ -15,6 +15,7 @@ qué hacer en sus tiempos libres.
 - https://www.boredapi.com/api/activity
 Ejemplo de respuesta:
 
+```json
     {
     "activity": "Learn how to use a french press",
     "type": "recreational",
@@ -24,6 +25,7 @@ Ejemplo de respuesta:
     "key": "4522866",
     "accessibility": 0.3
     }
+```
 
 - Deberá existir un endpoint que obtendrá nuevas actividades y serán registradas en una
 tabla de base de datos. El endpoint  es el siguiente:
@@ -61,3 +63,6 @@ Para comenzar a usar la aplicación, se crearon tres usuarios.
 Se puede inresar desde la siguiente url primero, 
 
 > http://127.0.0.1:8001/api-auth/login/
+
+
+![logindrfvol](https://user-images.githubusercontent.com/54911620/211727074-5e4a9c2b-a641-4393-8531-77cdb5f683a3.png)
